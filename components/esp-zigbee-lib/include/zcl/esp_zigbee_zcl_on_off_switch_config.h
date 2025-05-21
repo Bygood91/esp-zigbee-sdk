@@ -11,6 +11,15 @@ extern "C" {
 
 #include "esp_zigbee_type.h"
 
+/** @brief On/Off switch config cluster attribute identifiers
+*/
+typedef enum {
+    ESP_ZB_ZCL_ATTR_ON_OFF_SWITCH_CONFIG_SWITCH_TYPE_ID     = 0x0000,    /*!< Switch Type attribute */
+    ESP_ZB_ZCL_ATTR_ON_OFF_SWITCH_CONFIG_SWITCH_ACTIONS_ID  = 0x0010,    /*!< Switch Actions attribute */
+/*!< Define the desired startup behavior */
+} esp_zb_zcl_on_off_switch_config_attr_t;
+
+
 /** @brief on-off switch type attribute
 */
 typedef enum {
